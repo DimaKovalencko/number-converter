@@ -72,7 +72,7 @@ function App() {
     setNumber("");
   };
 
-  //Тип системы , в зависимости от выбраного радиобатона
+  //Тип системы, в зависимости от выбраного радиобатона
   const result = value === "decimal" ? () => decimalToBinary(number) : () => binaryToDecimal(number)
   return (
     <div className={classes.app}>

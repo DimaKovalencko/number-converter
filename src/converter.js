@@ -8,7 +8,7 @@ export function decimalToBinary(number) {
    return convertedBinary.join('')
 }
 
-//Функция конвертации двоичнои системы в десятичную
+//Функция конвертации двоичной системы в десятичную
 export function binaryToDecimal(str) {
     let convertedDecimal = null;
     const input = String(str);
@@ -16,7 +16,7 @@ export function binaryToDecimal(str) {
       .split('')
       .filter(i => i === '1' || i === '0');
 
-    // Валидация на двоичную систему
+    // Валидация двоичной системы
     if (input.length !== binary.length) {
         return convertedDecimal ='Вы вписали не двоичный код! Исправьте пожалуйста';
     }

@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
     '& > *': {
       margin: theme.spacing(1),
       width: theme.spacing(110),
-      height: theme.spacing(57),
+      height: theme.spacing(50),
     },
   },
   formControl:{
@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
     height: theme.spacing(4),
   },
   wrapResult: {
-    marginTop: theme.spacing(4),
+    marginTop: theme.spacing(5),
   },
   result: {
     fontSize: '20px',
@@ -105,11 +105,11 @@ function App() {
           </div>
           <div className={classes.wrapResult}>
             <div className={classes.result}>
-              { result() }
+              {'Результат: ' + result() }
             </div>
           </div>
         </Paper>
-    </div>
+      </div>
     </div>
   );
 }

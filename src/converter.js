@@ -5,7 +5,7 @@ export function decimalToBinary(number) {
         convertedBinary.unshift(number % 2);
         number = Math.floor(number / 2);
     }
-   return "Результат: " + convertedBinary.join('')
+   return convertedBinary.join('')
 }
 
 //Функция конвертации двоичнои системы в десятичную
@@ -23,12 +23,7 @@ export function binaryToDecimal(str) {
   
     convertedDecimal = binary.reduce((acc, curr, index, arr) => {
         return acc + Number(curr) * Math.pow(2, arr.length - 1 - index);
-        // if (arr.length >= 4)  {
-        //     return acc + Number(curr) * Math.pow(2, arr.length - 1 - index);
-        // } else {
-        //     const minLengthBinary = 4 - arr.length
-        //     return convertedDecimal ='Минимальное количество чисел в бинарном коде 4, допишите ещё ' + minLengthBinary ;
-        // }
     }, 0);
-    return "Результат: " + convertedDecimal
+
+    return convertedDecimal
   }
